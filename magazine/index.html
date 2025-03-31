@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chick Corea Tribute Magazine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/80 p-4 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="font-oswald text-2xl">CHICK COREA</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="toc.html" class="hover:text-yellow-500 transition">Contents</a>
+                <a href="biography.html" class="hover:text-yellow-500 transition">Biography</a>
+                <a href="discography.html" class="hover:text-yellow-500 transition">Discography</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+        <img src="https://images.pexels.com/photos/3497633/pexels-photo-3497633.jpeg" 
+             alt="Chick Corea at piano" 
+             class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="font-oswald text-6xl md:text-8xl mb-6">CHICK COREA</h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto">A Jazz Legend's Journey Through Time</p>
+            <a href="toc.html" class="mt-8 inline-block bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-3 px-8 rounded-full transition">
+                Explore Magazine
+            </a>
+        </div>
+    </section>
+
+    <script src="navigation.js"></script>
+</body>
+</html>
