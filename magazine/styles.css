@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Modal styles */
+.modal {
+    @apply fixed inset-0 bg-black/90 flex items-center justify-center z-50;
+    display: none;
+}
+
+.modal-content {
+    @apply relative bg-gray-800 p-8 rounded-lg max-w-4xl w-full;
+}
+
+.close-modal {
+    @apply absolute top-4 right-4 text-2xl text-yellow-500 hover:text-white;
+}
+
+/* Page transitions */
+.page-enter {
+    @apply opacity-0;
+}
+.page-enter-active {
+    @apply opacity-100 transition-opacity duration-300;
+}
+
+/* Magazine-specific styles */
+.magazine-page {
+    @apply min-h-screen py-20 px-6;
+    background: linear-gradient(to bottom, #121212 0%, #1A1A1A 100%);
+}
+
+.page-title {
+    @apply font-oswald text-4xl md:text-6xl text-yellow-500 mb-12 text-center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.album-card {
+    @apply bg-gray-800 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105;
+}
+
+.album-card img {
+    @apply w-full h-48 object-cover;
+}
+
+.timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-yellow-500;
+}
+
+.timeline-item:last-child {
+    @apply pb-0;
+}
+
+.timeline-dot {
+    @apply absolute w-4 h-4 rounded-full bg-yellow-500 -left-2 top-1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .magazine-page {
+        @apply py-12 px-4;
+    }
+    .page-title {
+        @apply text-3xl mb-8;
+    }
+}
