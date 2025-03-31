@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography | Chick Corea Magazine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-roboto">
+    <nav class="fixed top-0 w-full bg-black/80 p-4 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-oswald text-2xl hover:text-yellow-500">CHICK COREA</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="toc.html" class="hover:text-yellow-500">Contents</a>
+                <a href="biography.html" class="hover:text-yellow-500">Biography</a>
+                <a href="discography.html" class="text-yellow-500">Discography</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="magazine-page pt-20">
+        <div class="container mx-auto px-4">
+            <h1 class="page-title">DISCOGRAPHY</h1>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-center text-gray-400 mb-12">
+                    A selection of essential recordings from Chick Corea's vast catalog
+                </p>
+
+                <!-- Album Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Now He Sings, Now He Sobs -->
+                    <div class="album-card" data-modal-target="album-modal-1">
+                        <img src="https://images.pexels.com/photos/164727/pexels-photo-164727.jpeg" alt="Jazz trio performing">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Now He Sings, Now He Sobs (1968)</h3>
+                            <p class="text-gray-400 text-sm">With Miroslav Vitouš and Roy Haynes</p>
+                        </div>
+                    </div>
+
+                    <!-- Light as a Feather -->
+                    <div class="album-card" data-modal-target="album-modal-2">
+                        <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" alt="Jazz band performing">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Light as a Feather (1972)</h3>
+                            <p class="text-gray-400 text-sm">Return to Forever</p>
+                        </div>
+                    </div>
+
+                    <!-- Romantic Warrior -->
+                    <div class="album-card" data-modal-target="album-modal-3">
+                        <img src="https://images.pexels.com/photos/210887/pexels-photo-210887.jpeg" alt="Electric piano">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Romantic Warrior (1976)</h3>
+                            <p class="text-gray-400 text-sm">Return to Forever</p>
+                        </div>
+                    </div>
+
+                    <!-- Friends -->
+                    <div class="album-card" data-modal-target="album-modal-4">
+                        <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg" alt="Jazz quartet">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Friends (1978)</h3>
+                            <p class="text-gray-400 text-sm">With Herbie Hancock</p>
+                        </div>
+                    </div>
+
+                    <!-- Akoustic Band -->
+                    <div class="album-card" data-modal-target="album-modal-5">
+                        <img src="https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg" alt="Acoustic piano trio">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Akoustic Band (1989)</h3>
+                            <p class="text-gray-400 text-sm">With John Patitucci and Dave Weckl</p>
+                        </div>
+                    </div>
+
+                    <!-- Trilogy -->
+                    <div class="album-card" data-modal-target="album-modal-6">
+                        <img src="https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg" alt="Jazz piano close-up">
+                        <div class="p-4">
+                            <h3 class="font-oswald text-xl mb-2">Trilogy (2013)</h3>
+                            <p class="text-gray-400 text-sm">With Christian McBride and Brian Blade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Album Modals -->
+                <div id="album-modal-1" class="modal">
+                    <div class="modal-content">
+                        <button class="close-modal">&times;</button>
+                        <h3 class="font-oswald text-2xl mb-4">Now He Sings, Now He Sobs (1968)</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <img src="https://images.pexels.com/photos/164727/pexels-photo-164727.jpeg" 
+                                 alt="Album cover" 
+                                 class="rounded-lg">
+                            <div>
+                                <p class="mb-4">Corea's breakthrough trio album featuring his early avant-garde explorations.</p>
+                                <h4 class="font-bold mb-2">Track Highlights:</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Matrix</li>
+                                    <li>Now He Sings, Now He Sobs</li>
+                                    <li>Steps - What Was</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional modals would be added here for other albums -->
+            </div>
+        </div>
+    </main>
+
+    <script src="navigation.js"></script>
+</body>
+</html>
